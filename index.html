@@ -10,39 +10,153 @@
   </head>
   <body>
     <div class="">
-
-
-    <!-- Navbar Start -->
-    <nav class="flex items-center justify-between flex-wrap bg-white-500 p-6 border">
-      <div class="flex items-center flex-shrink-0 text-black mr-6">
-        <img src="assets/image/logo.jpeg" alt="logo coc" class="w-10">
-        <span class="font-semibold text-xl tracking-tight">COC Komputer</span>
-      </div>
-      <div class="block md:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-red-400 border-red-400 hover:text-red-600 hover:border-white" id="navId" onclick="toogleNav()">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
-      </div>
-
-      <!-- isi nav -->
-      <div class="flex w-full items-center justify-between md:w-auto" id="navContent" value="off" >
-        <div class="text-sm items-center justify-between">
-          <a href="#responsive-header" class="block mt-4 rounded-md p-1 md:inline-block md:mt-0 text-black font-medium hover:text-red-600 mr-4">
-            Home
-          </a>
-          <a href="#responsive-header" class="block mt-4 rounded-md p-1 md:inline-block md:mt-0 text-black font-medium hover:text-red-600 mr-4">
-            Contact
-          </a>
-          <a href="#responsive-header" class="block mt-4 rounded-md p-1 md:inline-block md:mt-0 text-black font-medium hover:text-red-600 mr-4">
-            About Us
-          </a>
-          <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-red-700 bg-red-500 hover:border-transparent hover:text-red-500 hover:bg-white mt-4 md:mt-0">Rakit PC</a>
+      <!-- Navbar Start -->
+      <nav
+        class="flex justify-between items-center flex-wrap bg-white-500 p-6 border-b-2 "
+      >
+        <div class="flex text-black mr-6">
+          <img src="assets/image/logo.jpeg" alt="logo coc" class="w-10" />
+          <span class="mt-1 font-semibold text-xl tracking-tight"
+            >COC Komputer</span
+          >
         </div>
+        <div class="block md:hidden">
+          <button
+            class="flex items-center px-3 py-2 mb-2 border rounded text-red-400 border-red-400 hover:text-red-600 hover:border-white"
+            id="navId"
+            onclick="toogleNav()"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- isi nav -->
+        <div
+          class="flex w-full items-center justify-between md:w-auto max-[767px]:border-t"
+          id="navContent"
+          value="off"
+        >
+          <div class="text-sm items-center justify-between">
+            <a
+              href="#responsive-header"
+              class="block mt-4 rounded-md p-1 md:inline-block md:mt-0 text-black font-medium hover:text-red-600 mr-4"
+            >
+              Home
+            </a>
+            <a
+              href="#responsive-header"
+              class="block mt-4 rounded-md p-1 md:inline-block md:mt-0 text-black font-medium hover:text-red-600 mr-4"
+            >
+              Contact
+            </a>
+            <a
+              href="#responsive-header"
+              class="block mt-4 rounded-md p-1 md:inline-block md:mt-0 text-black font-medium hover:text-red-600 mr-4"
+            >
+              About Us
+            </a>
+            <a
+              href="#"
+              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-red-700 bg-red-500 hover:border-transparent hover:text-red-500 hover:bg-white mt-4 md:mt-0"
+              >Rakit PC</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Content Start -->
+      <!-- <div class="flex flex-col items-center justify-center w-full h-full bg-slate ">
+      <h1 class="flex font-black mt-5 text-3xl  ">ABOUT US</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nam voluptatibus atque nostrum dolorum. Facere ipsum pariatur, fugit culpa officiis unde, enim eos beatae libero dicta molestias blanditiis eaque perspiciatis.</p>
+    </div> -->
+      <!-- Content End -->
+
+      <!-- Rakit PC Start-->
+      <div class="flex items-center justify-center flex-col ">
+        <div class="flex">
+          <h1 class="flex font-black mt-5 text-3xl">Simulasi Rakit PC</h1>
+        </div>
+        <!-- option start -->
+        
+        <div class="flex flex-row w-full justify-between items-center mt-3 ">
+          <p class="flex m-5 w-2/12 text-lg font-semibold flex-col">Brand</p>
+          <div class="flex m-5 w-7/12 text-lg font-semibold flex-col">
+            <select class="rounded py-2 pl-3 ">
+              <option value="" class="pl-3">Pilih Brand Procesor</option>
+              <option value="" class="pl-3">Intel</option>
+              <option value="" class="pl-3">AMD</option>
+            </select>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-row w-full justify-between items-center mt-3 ">
+          <p class="flex m-5 w-2/12 text-lg font-semibold flex-col">Socket</p>
+          <div class="flex m-5 w-7/12 text-lg font-semibold flex-col">
+            <select class="rounded py-2 pl-3 ">
+              <option value="" class="pl-3">Pilih Socket Procesor</option>
+              <option value="" class="pl-3">LGA XXXX</option>
+              <option value="" class="pl-3">AM/TR X</option>
+            </select>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-row w-full justify-between items-center mt-3 ">
+          <p class="flex m-5 w-2/12 text-lg font-semibold flex-col">RAM</p>
+          <div class="flex m-5 w-7/12 text-lg font-semibold flex-col">
+            <select class="rounded py-2 pl-3 ">
+              <option value="" class="pl-3">Pilih Jumlah RAM</option>
+              <option value="" class="pl-3">2 GB</option>
+              <option value="" class="pl-3">4 GB</option>
+              <option value="" class="pl-3">8 GB</option>
+              <option value="" class="pl-3">16 GB</option>
+              <option value="" class="pl-3">32 GB</option>
+            </select>
+            <div class="flex ml-5 w-10/12 text-lg font-semibold  ">
+
+              <select class="rounded pl-3 ">
+                <option value="" class="pl-3">1</option>
+                <option value="" class="pl-3">2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-row w-full justify-between items-center mt-3 ">
+          <p class="flex m-5 w-2/12 text-lg font-semibold flex-col">Harddisk/SSD</p>
+          <div class="flex m-5 w-7/12 text-lg font-semibold flex-col">
+            <select class="rounded py-2 pl-3 ">
+              <option value="" class="pl-3">Pilih Harddisk/SSD</option>
+              <option value="" class="pl-3">Harddisk 1TB</option>
+              <option value="" class="pl-3">SSD 500GB</option>
+            </select>
+          </div>
+        </div>
+
+        
+        <div class="flex flex-row w-full justify-between items-center mt-3 ">
+          <p class="flex m-5 w-2/12 text-lg font-semibold flex-col">PSU</p>
+          <div class="flex m-5 w-7/12 text-lg font-semibold flex-col">
+            <select class="rounded py-2 pl-3 ">
+              <option value="" class="pl-3">Pilih PSU</option>
+              <option value="" class="pl-3">Simbadda 2000w 80+ Diamond</option>
+              <option value="" class="pl-3">Heater Master 10000w 80+ Vibranium</option>
+            </select>
+          </div>
+        </div>
+        <!-- option end -->
       </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-  </div>
+      <!-- Rakit PC End -->
+    </div>
   </body>
 </html>
