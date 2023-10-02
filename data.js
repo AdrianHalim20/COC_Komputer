@@ -7,7 +7,7 @@ let channel = document.getElementById("channel")
 let storage = document.getElementById("storage")
 let vga = document.getElementById("vga")
 let psu = document.getElementById("psu")
-let saveButton = document.getElementById("save")
+let saveButton = document.getElementById("saveButton")
 
 
 function toogleNav(){
@@ -20,8 +20,12 @@ function toogleNav(){
   }
 }
 
-function save() {
-saveButton.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(`Brand Yang Dipilih : ${brand.value}`))
+function saving() {
+saveButton.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(`Brand: ${brand.value} \nSocket: ${socket.value} \nMotherboard: ${mobo.value} \nRam: ${ram.value} Dengan Configurasi ${channel.value} \nStorage: ${storage.value} \nVGA: ${vga.value} \nPower Supply: ${psu.value}`))
+saveButton.setAttribute('download','RakitanPcSaya.txt');
+setTimeout(() => {
+  alert("Berhasil Disimpan");
+}, 1000);
 }
 
 function load() {

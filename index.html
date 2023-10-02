@@ -7,7 +7,7 @@
     <link rel="icon" href="assets/image/logo.jpeg" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="">
+  <body>
     <div class="">
       <!-- Navbar Start -->
       <nav
@@ -133,7 +133,7 @@
             class="flex m-5 w-7/12 justify-between text-lg font-semibold flex-row"
           >
             <div class="flex w-full">
-              <select class="rounded py-2 pl-3 w-10/12" id="ram">
+              <select class="rounded py-2 pl-3 w-screen" id="ram">
                 <option value="" class="pl-3">Pilih Jumlah RAM</option>
                 <option value="2 GB" class="pl-3">2 GB</option>
                 <option value="4 GB" class="pl-3">4 GB</option>
@@ -141,7 +141,7 @@
                 <option value="16 GB" class="pl-3">16 GB</option>
                 <option value="32 GB" class="pl-3">32 GB</option>
               </select>
-              <select class="flex rounded ml-2 py-2 pl-3" id="channel">
+              <select class="flex rounded ml-2 py-2 pl-3 w-10/12" id="channel">
                 <option value="Single Channel" class="pl-3">
                   Single Channel
                 </option>
@@ -205,24 +205,33 @@
         </div>
         <!-- option end -->
         <div class="flex w-full justify-end mr-10 mb-3">
-          <button
+          <a
             class="font-semibold text-slate- bg-red-500 hover:border-transparent hover:text-red-500 hover:bg-red-200 rounded-md px-5 py-2"
-            id="save"
-            onclick="save()"
+            onclick="saving()"
+            id="saveButton"
           >
             Save
-          </button>
+          </a>
           <button
             class="font-semibold text-slate- bg-red-500 hover:border-transparent hover:text-red-500 hover:bg-red-200 rounded-md px-5 py-2 ml-4"
-            id="load"
             onclick="load()"
+            id="load"
           >
             Load
           </button>
         </div>
       </div>
       <!-- Rakit PC End -->
-      <div class="bottom-0 h-20 bg-gray-300"></div>
+      <!-- Footer Start -->
+      <div class="relative bg-gray-600">
+        <div class="absolute inset-x-0 w-full bg-gray-300">
+         <div class="flex items-center justify-center text-3xl">
+           <p>Made With ❤️ By Tsukishiyama Lim</p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
     </div>
     <script src="data.js"></script>
   </body>
