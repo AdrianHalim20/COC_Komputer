@@ -1,4 +1,13 @@
 let navbar = document.getElementById("navContent")
+let brand = document.getElementById("brand")
+let socket = document.getElementById("socket")
+let mobo = document.getElementById("mobo")
+let ram = document.getElementById("ram")
+let channel = document.getElementById("channel")
+let storage = document.getElementById("storage")
+let vga = document.getElementById("vga")
+let psu = document.getElementById("psu")
+let saveButton = document.getElementById("save")
 
 
 function toogleNav(){
@@ -9,4 +18,11 @@ function toogleNav(){
     navbar.classList.add("hidden")
     navbar.classList.remove("block")
   }
+}
+
+function save() {
+saveButton.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(`Brand Yang Dipilih : ${brand.value}`))
+}
+
+function load() {
 }
